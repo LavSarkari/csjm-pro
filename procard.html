@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    
+</head>
+
+<body>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #e6e6f0;
+    margin: 0 20px;
+}
+
+.container{
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
+.card{
+    position: relative;
+    background-color: #fff;
+    padding: 20px 30px;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.top{
+    position: relative;
+    text-align: center;
+
+}
+
+.top img{
+    width: 150px;
+    border-radius: 50%;
+}
+
+.top p{
+    color: gray;
+
+    font-size: 18px;
+}
+
+.top h1{
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+.check{
+    position: absolute;
+    background-color: #2abf7b;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    border-radius: 50%;
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+    right: 50px;
+    top: 100px;
+}
+
+.menu{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 4px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px;
+}
+
+.menu__dot{
+    background-color: #cbcbcb;
+    height: 7px;
+    width: 7px;
+    border-radius: 50%;
+}
+
+.flex-container{
+    margin-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.flex-container .item{
+    text-align: center;
+}
+
+.flex-container .item h1{
+    font-weight: 400;
+    margin-top: 10px;
+    font-size: 22px;
+}
+
+.flex-container .item p{
+    color: gray;
+    font-size: 16px;
+}
+
+.desc{
+    color: gray;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    max-width: 300px;
+}
+
+.icons{
+    margin-top: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 20px;
+}
+
+.icon{
+    background-color: #40b0f8;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.icon:nth-child(2){
+    background-color: #3e5a9b;
+}
+
+.icon:nth-child(3){
+    background-color: #ff00bf;
+}
+
+.icon:nth-child(4){
+    background-color: #1768ff;
+}
+
+.btn{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 0.5rem;
+    margin: auto;
+    margin-top: 20px;
+    text-decoration: none;
+    background-color: rgb(250, 0, 0);
+    padding: 15px;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.btn i {
+    font-size: 28px;
+}
+</style>
+    <div class="container">
+
+        <div class="card">
+
+            <div class="top">
+                <img src="https://avatars.githubusercontent.com/u/69592007?v=4">
+                <h1>LavSarkari!!!</h1>
+                <p>STUDENT IN CSJM</p>
+                <div class="check">
+                    <i class="ri-check-line"></i>
+                </div>
+            </div>
+
+            <div class="menu">
+                <div class="menu__dot"></div>
+                <div class="menu__dot"></div>
+                <div class="menu__dot"></div>
+            </div>
+
+            <div class="flex-container">
+
+                <div class="item">
+                    <p>Projects</p>
+                    <h1>11</h1>
+                </div>
+
+                <div class="item">
+                    <p>Following</p>
+                    <h1>50</h1>
+                </div>
+
+                <div class="item">
+                    <p>Followers</p>
+                    <h1>9k</h1>
+                </div>
+
+            </div>
+
+            <p class="desc">just a everyday regular guy.</p>
+
+            <div class="icons">
+                <div class="icon" herf="https://instagram.com/cyber_tantrik">
+                    <i class="ri-instagram-fill"></i>
+                </div>
+                <div class="icon" href="https://www.linkedin.com/in/lavsarkari">
+                    <i class="ri-linkedin-fill"></i>
+                </div>
+            </div>
+
+            <a class="btn" href="https://youtube.com/channel/UCRlJHZqOom0ZYt-zjEWoTJA" target="_blank">
+                <i class="ri-youtube-fill"></i>
+                Subscribe Now
+            </a>
+
+        </div>
+
+    </div>
+
+</body>
+
+
+</html>
